@@ -12,3 +12,6 @@ An overview of what APIs are, how they work, and examples of their use in real-w
 
 ### [Introduction to HTTP](HTTP_intro.md)
 An introduction to the Hypertext Transfer Protocol, explaining its structure, how it operates as a request–response system, and how it is used in both SOAP and REST APIs.
+
+### [Introduction to HTTPS](HTTPS.md)
+Covers HTTPS as the secure version of HTTP, explaining why encryption is needed, how TLS works, and how it protects API communication from interception or tampering.
