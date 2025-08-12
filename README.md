@@ -8,5 +8,5 @@ Designed to give a clear understanding of what APIs are, how they work, and how 
 ### [Introduction to APIs](API.md)
 An overview of what APIs are, how they work, and examples of their use in real-world applications.
 
-### [Introduction to HTTP](HTTP.md)
+### [Introduction to HTTP](HTTP_intro.md)
 An introduction to the Hypertext Transfer Protocol, explaining its structure, how it operates as a request–response system, and how it is used in both SOAP and REST APIs.
