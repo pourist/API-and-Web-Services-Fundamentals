@@ -155,11 +155,6 @@ This **HTTP request–response loop** is the same whether you’re fetching weat
 
 ---
 
-If you want, I can now **add a labeled HTTP transaction diagram** that applies to both sections so readers can visually connect the steps. That would make it easier to understand than just text. Would you like me to create it?
-
-
----
-
 In short, APIs are the translators of the software world — turning your requests into actions and bringing back the results, without you ever having to see the inner workings of the system.
 
 ---
