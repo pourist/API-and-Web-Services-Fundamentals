@@ -3,6 +3,8 @@
 A concise technical guide covering the fundamentals of APIs and the HTTP protocol.  
 Designed to give a clear understanding of what APIs are, how they work, and how HTTP enables their communication over the web.
 
+This is an ongoing reference and will be expanded over time.
+
 ## Recommended Reading Order
 
 ### [Introduction to APIs](API.md)
