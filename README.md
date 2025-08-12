@@ -15,3 +15,6 @@ An introduction to the Hypertext Transfer Protocol, explaining its structure, ho
 
 ### [Introduction to HTTPS](HTTPS.md)
 Covers HTTPS as the secure version of HTTP, explaining why encryption is needed, how TLS works, and how it protects API communication from interception or tampering.
+
+### [Types of Applications – Native, Web, and Hybrid](Types_of_Applications.md)
+Explains the differences between native, web, and hybrid applications, including how they interact with device APIs, their advantages, and trade-offs in performance, access, and cost.
