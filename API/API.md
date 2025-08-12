@@ -81,11 +81,6 @@ Other examples include:
 
 ---
 
-Got it — I’ll weave HTTP more explicitly into both **How an API Transaction Works** and **A Practical Example** so it’s clear that HTTP is the core communication protocol in these cases.
-Here’s the refined version of those two sections:
-
----
-
 ## **How an API Transaction Works**
 
 Regardless of the application, most web-based API interactions follow the same **HTTP request–response cycle**:
