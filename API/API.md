@@ -143,6 +143,8 @@ Full URL:
 https://www.google.com/search?q=elephant
 ```
 
+![Alt text for accessibility](/images/Client_server_google.png)
+
 Here’s what happens:
 
 1. Your browser sends an **HTTP GET** request to Google’s `/search` endpoint, including the query parameter `q=elephant`.
