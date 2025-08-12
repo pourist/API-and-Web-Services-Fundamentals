@@ -1,0 +1,136 @@
+# **What is an API?**
+
+An **Application Programming Interface (API)** is a set of rules that allows different software applications to communicate with each other.
+It tells one program **how to ask** another program for something, **what information** needs to be included in the request, and **how the answer** will be delivered back.
+
+You can think of it as a bridge: it connects two separate systems so they can exchange data or trigger actions, even if they were built by different people, in different programming languages, or for different purposes.
+
+---
+
+## **A Simple Analogy – The Restaurant Waiter**
+
+![Alt text for accessibility](/images/API_analogy.png)
+
+Imagine you’re at a restaurant. You, the customer, want a specific meal from the kitchen. Instead of walking into the kitchen and making it yourself, you tell the waiter what you want from the menu.
+The waiter takes your order to the kitchen, the chefs prepare it, and the waiter returns with your meal.
+
+In this analogy:
+
+* **You** are the client (the software requesting data or a service).
+* **The waiter** is the API, carrying your request to the server and delivering the response.
+* **The kitchen** is the application providing the functionality.
+
+You don’t need to know how the kitchen works internally — you only need to know **how to ask for what you want**.
+
+---
+
+## **Breaking Down the Term "API"**
+
+The name itself explains what it is:
+
+* **Application** – The program or service that provides specific functions, such as a weather service, payment gateway, or messaging platform.
+* **Programming** – The act of writing code to interact with that application.
+* **Interface** – The defined way two systems can interact, whether that’s through functions, methods, or web endpoints.
+
+Together, **Application Programming Interface** simply means:
+*A defined way for code to interact with a specific application.*
+
+---
+
+## **When Does an API Exist?**
+
+An API exists when there is a documented and predictable way to tell a program to interact with another application.
+If a service provides functions, methods, or endpoints that external code can call, then it has an API.
+
+---
+
+## **Why APIs Matter**
+
+APIs are powerful because they allow you to use existing capabilities without building them yourself.
+They can be used across different platforms and programming languages, and a well-designed API remains stable over time, even as the underlying application evolves.
+
+This means developers can:
+
+* Build new apps that integrate existing services.
+* Automate tasks that would otherwise require manual work.
+* Access data and features from other systems securely and consistently.
+
+---
+
+## **Real-World Examples**
+
+To make this concrete, let’s look at how APIs appear in everyday life.
+
+**Example 1 – Weather App**
+When you open a weather app on your phone, it doesn’t generate the forecast itself. Instead, it calls a weather service’s API, asking for the forecast data for your location. The app sends a request, the API retrieves the data from its system, and the result is shown on your screen.
+
+**Example 2 – eBay API**
+Suppose you want to build your own shopping app that lists products from eBay. Instead of scraping the website, you can use the official eBay API. By sending a properly formatted request (e.g., for “wireless mouse”), the API might return:
+
+* **Title:** Logitech Wireless Mouse M185
+* **Price:** 15.99 USD
+* **Availability:** In stock
+
+Your program doesn’t need to know how eBay stores its data — only how to talk to its API.
+
+Other examples include:
+
+* Sending a WhatsApp message through the WhatsApp API.
+* Running a Google search through the Google Search API.
+* Creating a new order in SAP via the SAP API.
+
+---
+
+## **How an API Transaction Works**
+
+Regardless of the application, most API interactions follow the same pattern:
+
+1. **A request is sent** – The client asks for data or triggers an action.
+2. **The server processes the request** – The program behind the API does the necessary work.
+3. **A response is returned** – The result is sent back to the client in a defined format.
+
+This process is like a loop: request → processing → response.
+
+---
+
+## **A Practical Example – Google Search**
+
+You’ve probably typed something into Google’s search bar. That’s essentially you sending a request.
+Here’s how it looks in URL form:
+
+* **Base URL (application location):**
+
+  ```
+  www.google.com
+  ```
+* **Path (specific function to run):**
+
+  ```
+  /search
+  ```
+* **Query parameter (what you’re searching for):**
+
+  ```
+  ?q=elephant
+  ```
+
+Putting it together:
+
+```
+www.google.com/search?q=elephant
+```
+![Alt text for accessibility](/images/Client_server_google.png)
+
+When you hit enter:
+
+1. Your browser sends a request to Google’s servers with your search term.
+2. Google runs its search program to find relevant results.
+3. The results are returned and displayed in your browser.
+
+This same request–response cycle is what happens in most API interactions, whether you’re searching the web, getting weather data, or ordering products from an online store.
+
+---
+
+In short, APIs are the translators of the software world — turning your requests into actions and bringing back the results, without you ever having to see the inner workings of the system.
+
+---
