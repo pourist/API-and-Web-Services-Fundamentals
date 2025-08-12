@@ -42,6 +42,8 @@ Together, **Application Programming Interface** simply means:
 An API exists when there is a documented and predictable way to tell a program to interact with another application.
 If a service provides functions, methods, or endpoints that external code can call, then it has an API.
 
+Note: When people talk about “APIs” in everyday tech conversations, they are often referring specifically to web APIs, APIs exposed over the internet via a web server. While all web servers that provide data or services in this way are APIs, not all APIs are web servers. APIs can also exist locally, between components within the same system, or in offline software libraries.
+
 ---
 
 ## **Why APIs Matter**
