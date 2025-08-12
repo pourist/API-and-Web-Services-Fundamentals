@@ -85,10 +85,10 @@ Other examples include:
 
 ## **How an API Transaction Works**
 
-Regardless of the application, most web-based API interactions follow the same **HTTP request–response cycle**:
+Regardless of the application, most web-based API interactions follow the same **[HTTP](HTTP.md) request–response cycle**:
 
 1. **A request is sent** –
-   The client (such as a browser, mobile app, or backend service) sends an **HTTP request** to the API’s server. This request includes:
+   The client (such as a browser, mobile app, or backend service) sends an **[HTTP](HTTP.md) request** to the API’s server. This request includes:
 
    * The **URL** — the web address of the API endpoint.
    * The **HTTP method** — such as:
@@ -151,7 +151,7 @@ Here’s what happens:
    * Status code: `200 OK` (if successful).
    * Body: HTML content showing your search results.
    * Headers: Information about caching, content type, and more.
-4. Your browser renders the HTML from the HTTP response, displaying the results on your screen.
+4. Your browser renders the HTML from the [HTTP](HTTP.md) response, displaying the results on your screen.
 
 This **HTTP request–response loop** is the same whether you’re fetching weather data from a weather API, retrieving products from an online store, or interacting with a social media platform’s API.
 
