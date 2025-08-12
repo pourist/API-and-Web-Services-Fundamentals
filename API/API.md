@@ -81,27 +81,50 @@ Other examples include:
 
 ---
 
+Got it — I’ll weave HTTP more explicitly into both **How an API Transaction Works** and **A Practical Example** so it’s clear that HTTP is the core communication protocol in these cases.
+Here’s the refined version of those two sections:
+
+---
+
 ## **How an API Transaction Works**
 
-Regardless of the application, most API interactions follow the same pattern:
+Regardless of the application, most web-based API interactions follow the same **HTTP request–response cycle**:
 
-1. **A request is sent** – The client asks for data or triggers an action.
-2. **The server processes the request** – The program behind the API does the necessary work.
-3. **A response is returned** – The result is sent back to the client in a defined format.
+1. **A request is sent** –
+   The client (such as a browser, mobile app, or backend service) sends an **HTTP request** to the API’s server. This request includes:
 
-This process is like a loop: request → processing → response.
+   * The **URL** — the web address of the API endpoint.
+   * The **HTTP method** — such as:
+
+     * `GET` – Retrieve data.
+     * `POST` – Send data or create something.
+     * `PUT` / `PATCH` – Update data.
+     * `DELETE` – Remove data.
+   * Optional **headers** — metadata like authentication tokens, content type, or caching instructions.
+   * Optional **body** — usually in JSON or XML format, containing data to be processed.
+
+2. **The server processes the request** –
+   The server-side application receives the HTTP request, executes the necessary operations (e.g., database queries, third-party API calls, business logic), and prepares the output.
+
+3. **A response is returned** –
+   The server sends back an **HTTP response** consisting of:
+
+   * An **HTTP status code** — `200 OK` for success, `404 Not Found` if the resource doesn’t exist, `500 Internal Server Error` if something failed, etc.
+   * The **response body** — usually JSON or XML containing the requested data or confirmation of the action taken.
+   * Optional **response headers** — extra metadata like caching info or content type.
+
+This cycle — **HTTP request → processing → HTTP response** — is the backbone of how most modern APIs operate.
 
 ---
 
 ## **A Practical Example – Google Search**
 
-You’ve probably typed something into Google’s search bar. That’s essentially you sending a request.
-Here’s how it looks in URL form:
+Typing into Google’s search bar is essentially making an **HTTP request** to Google’s servers.
 
 * **Base URL (application location):**
 
   ```
-  www.google.com
+  https://www.google.com
   ```
 * **Path (specific function to run):**
 
@@ -114,20 +137,29 @@ Here’s how it looks in URL form:
   ?q=elephant
   ```
 
-Putting it together:
+Full URL:
 
 ```
-www.google.com/search?q=elephant
+https://www.google.com/search?q=elephant
 ```
-![Alt text for accessibility](/images/Client_server_google.png)
 
-When you hit enter:
+Here’s what happens:
 
-1. Your browser sends a request to Google’s servers with your search term.
-2. Google runs its search program to find relevant results.
-3. The results are returned and displayed in your browser.
+1. Your browser sends an **HTTP GET** request to Google’s `/search` endpoint, including the query parameter `q=elephant`.
+2. Google’s server processes the HTTP request by running its search algorithm to find relevant results.
+3. Google sends back an **HTTP response** with:
 
-This same request–response cycle is what happens in most API interactions, whether you’re searching the web, getting weather data, or ordering products from an online store.
+   * Status code: `200 OK` (if successful).
+   * Body: HTML content showing your search results.
+   * Headers: Information about caching, content type, and more.
+4. Your browser renders the HTML from the HTTP response, displaying the results on your screen.
+
+This **HTTP request–response loop** is the same whether you’re fetching weather data from a weather API, retrieving products from an online store, or interacting with a social media platform’s API.
+
+---
+
+If you want, I can now **add a labeled HTTP transaction diagram** that applies to both sections so readers can visually connect the steps. That would make it easier to understand than just text. Would you like me to create it?
+
 
 ---
 
