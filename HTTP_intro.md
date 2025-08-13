@@ -91,9 +91,9 @@ The body carries the main content of the message. It is optional:
 * Methods like `POST` or `PUT` usually include one.
 * Responses typically include one unless the status code specifies otherwise (e.g., `204 No Content`).
 
-The body can contain various formats, such as JSON, XML, HTML, plain text, or binary data.
+The body can contain various formats, such as [JSON](JSON_and_XML.md), [XML](JSON_and_XML.md), HTML, plain text, or binary data.
 
-Example (JSON):
+Example ([JSON](JSON_and_XML.md)):
 
 ```json
 {
@@ -142,11 +142,11 @@ The difference is that requests describe what the client wants to do, while resp
 
 ---
 
-## **SOAP vs REST**
+## **[SOAP](REST_and_SOAP.md) vs [REST](REST_and_SOAP.md)**
 
-APIs that use HTTP can follow different architectural styles. Two of the most well-known are **SOAP** and **REST**.
+APIs that use HTTP can follow different architectural styles. Two of the most well-known are **[SOAP](REST_and_SOAP.md)** and **[REST](REST_and_SOAP.md)**.
 
-* **SOAP (Simple Object Access Protocol)** – A protocol with strict rules, typically using XML for its messages. It supports advanced features like built-in error handling and security standards but is more complex and heavier in structure.
+* **[SOAP](REST_and_SOAP.md) (Simple Object Access Protocol)** – A protocol with strict rules, typically using [XML](JSON_and_XML.md) for its messages. It supports advanced features like built-in error handling and security standards but is more complex and heavier in structure.
 
 * **REST (Representational State Transfer)** – An architectural style that uses the standard HTTP methods (`GET`, `POST`, etc.) directly, often with lightweight formats like JSON. REST focuses on simplicity, statelessness, and clear resource-based URLs.
 

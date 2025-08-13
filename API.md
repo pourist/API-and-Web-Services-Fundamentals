@@ -98,7 +98,7 @@ Regardless of the application, most web-based API interactions follow the same *
      * `PUT` / `PATCH` – Update data.
      * `DELETE` – Remove data.
    * Optional **headers** — metadata like authentication tokens, content type, or caching instructions.
-   * Optional **body** — usually in JSON or XML format, containing data to be processed.
+   * Optional **body** — usually in [JSON](JSON_and_XML.md) or [XML](JSON_and_XML.md) format, containing data to be processed.
 
 2. **The server processes the request** –
    The server-side application receives the HTTP request, executes the necessary operations (e.g., database queries, third-party API calls, business logic), and prepares the output.
@@ -107,7 +107,7 @@ Regardless of the application, most web-based API interactions follow the same *
    The server sends back an **HTTP response** consisting of:
 
    * An **HTTP status code** — `200 OK` for success, `404 Not Found` if the resource doesn’t exist, `500 Internal Server Error` if something failed, etc.
-   * The **response body** — usually JSON or XML containing the requested data or confirmation of the action taken.
+   * The **response body** — usually [JSON](JSON_and_XML.md) or [XML](JSON_and_XML.md) containing the requested data or confirmation of the action taken.
    * Optional **response headers** — extra metadata like caching info or content type.
 
 This cycle — **HTTP request → processing → HTTP response** — is the backbone of how most modern APIs operate.
