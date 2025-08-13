@@ -9,7 +9,7 @@ You can think of it as a bridge: it connects two separate systems so they can ex
 
 ## **A Simple Analogy – The Restaurant Waiter**
 
-![Alt text for accessibility](/images/API_analogy.png)
+![Alt text for accessibility](/assets/images/API_analogy.png)
 
 Imagine you’re at a restaurant. You, the customer, want a specific meal from the kitchen. Instead of walking into the kitchen and making it yourself, you tell the waiter what you want from the menu.
 The waiter takes your order to the kitchen, the chefs prepare it, and the waiter returns with your meal.
@@ -140,7 +140,7 @@ Full URL:
 https://www.google.com/search?q=elephant
 ```
 
-![Alt text for accessibility](/images/Client_server_google.png)
+![Alt text for accessibility](/assets/images/Client_server_google.png)
 
 Here’s what happens:
 

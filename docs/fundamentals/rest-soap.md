@@ -51,9 +51,10 @@ Content-Type: text/xml
 
 REST is an **architectural style** rather than a strict protocol.
 It was introduced as a simpler, more flexible way to build web APIs using HTTP’s existing features directly.
-RESTful APIs are **stateless** — each request contains all the information needed for the server to process it.
 
-REST makes full use of HTTP methods to describe the action being taken:
+Unlike SOAP, REST makes full use of HTTP methods to describe the action being taken.
+
+**Core HTTP Methods in REST:**
 
 | Method   | Purpose                     | Example                                                         |
 | -------- | --------------------------- | --------------------------------------------------------------- |
@@ -64,12 +65,60 @@ REST makes full use of HTTP methods to describe the action being taken:
 
 ---
 
-**Example – Searching “elephant” in REST:**
+### **How REST Works (example)**
 
-1. Send an HTTP request to a resource URL such as `/search?q=elephant`.
-2. The **HTTP method** specifies the action.
-3. REST can return data in **[JSON](/docs/fundamentals/json-xml.md)**, **[XML](/docs/fundamentals/json-xml.md)**, HTML, images, or other formats — JSON is most common.
+Searching “elephant” in a REST API:
+
+1. You send an HTTP request directly to a resource URL.
+2. The **HTTP method** in the start line tells the server what action to take.
+3. REST can return data in **[JSON](JSON_XML.md)**, XML, images, or other formats — JSON is most common.
 4. The server responds with a status code and the requested data.
+
+**REST Request Structure:**
+
+* **Start line**:
+  Example:
+
+  ```
+  GET /search?q=elephant HTTP/1.1
+  ```
+* **Headers**:
+
+  ```
+  Content-Type: application/json
+  ```
+* **Blank line**
+* **Body**: Optional — used for `POST` and `PUT` requests, often JSON.
+
+**Example REST HTTP request:**
+
+```http
+GET /search?q=elephant HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+```
+
+**Example REST HTTP response:**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "results": [
+    {
+      "name": "African Elephant",
+      "species": "Loxodonta africana",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "Asian Elephant",
+      "species": "Elephas maximus",
+      "status": "Endangered"
+    }
+  ]
+}
+```
 
 ---
 
@@ -91,4 +140,3 @@ REST makes full use of HTTP methods to describe the action being taken:
 
 * **SOAP** is rigid, XML-based, and suited for enterprise systems needing strong contracts and formal standards.
 * **REST** is lightweight, stateless, and has become the dominant style for modern web [API](/docs/fundamentals/api.md)s due to its simplicity and flexibility.
-

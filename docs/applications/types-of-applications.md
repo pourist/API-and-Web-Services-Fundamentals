@@ -20,7 +20,7 @@ An **OS** is the software layer that manages the device’s hardware and provide
 When you install a native app, it has direct access to these OS APIs.
 For example, **Google Translate** on Android can request location data through the OS API to offer region-specific translations.
 
-![Alt text for accessibility](/images/Native_App.png)
+![Alt text for accessibility](/assets/images/Native_App.png)
 
 Native apps are **downloaded and installed** through app stores, and because they are built for a specific platform, they typically offer:
 
@@ -35,7 +35,7 @@ Native apps are **downloaded and installed** through app stores, and because the
 A **web app** runs inside a web browser rather than directly on the operating system.
 It is limited to the APIs that the browser itself exposes — meaning it cannot directly access OS-level features like vibration or native push notifications (unless supported through browser standards).
 
-![Alt text for accessibility](/images/Web_App.png)
+![Alt text for accessibility](/assets/images/Web_App.png)
 
 Browser APIs include examples such as:
 

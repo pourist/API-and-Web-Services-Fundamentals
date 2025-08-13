@@ -1,6 +1,6 @@
 # **Introduction to HTTPS**
 
-If you haven’t yet reviewed [Introduction to APIs](/docs/fundamentals/api.md) and [Introduction to HTTP](HTTP.md), it’s worth starting there.
+If you haven’t yet reviewed [Introduction to APIs](/docs/fundamentals/api.md) and [Introduction to HTTP](/docs/fundamentals/http.md), it’s worth starting there.
 APIs often rely on HTTP for communication, and HTTPS builds directly on those concepts.
 
 When you access an API, your client sends a request and receives a response from a program or service.

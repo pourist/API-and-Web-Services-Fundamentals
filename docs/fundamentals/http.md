@@ -33,7 +33,7 @@ Each HTTP message — whether it’s a request or a response — follows the sam
 
 The start line is always the first line of the message, but its format differs between requests and responses.
 
-![Alt text for accessibility](/images/HTTP_start_line.png)
+![Alt text for accessibility](/assets/images/HTTP_start_line.png)
 
 
 ### **In a Request**
