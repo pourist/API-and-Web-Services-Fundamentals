@@ -1,6 +1,6 @@
 # **Types of Applications – Native, Web, and Hybrid**
 
-Understanding the different types of applications is important because the way an app is built affects how it can interact with **[APIs](API.md)** and what device features it can use.
+Understanding the different types of applications is important because the way an app is built affects how it can interact with **[APIs](/docs/fundamentals/api.md)** and what device features it can use.
 Modern applications can be broadly grouped into three main categories: **native apps**, **web apps**, and **hybrid apps**.
 Each type interacts with devices and operating systems differently, with trade-offs in performance, cost, and access to device capabilities.
 
@@ -12,7 +12,7 @@ A **native app** is built to run directly on a specific operating system (OS), s
 
 ### **What is an Operating System?**
 
-An **OS** is the software layer that manages the device’s hardware and provides system-level services. It exposes **[APIs](API.md)** — predefined ways for apps to request and use features of the device.
+An **OS** is the software layer that manages the device’s hardware and provides system-level services. It exposes **[APIs](/docs/fundamentals/api.md)** — predefined ways for apps to request and use features of the device.
 
 * **Low-level APIs** – Direct access to hardware capabilities, such as vibration, microphone, camera, GPS location, or phone calls.
 * **High-level APIs** – Ready-made services like calendar integration, push notifications, email handling, or contacts management.

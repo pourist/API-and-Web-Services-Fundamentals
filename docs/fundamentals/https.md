@@ -1,10 +1,10 @@
 # **Introduction to HTTPS**
 
-If you haven’t yet reviewed [Introduction to APIs](API.md) and [Introduction to HTTP](HTTP.md), it’s worth starting there.
+If you haven’t yet reviewed [Introduction to APIs](/docs/fundamentals/api.md) and [Introduction to HTTP](HTTP.md), it’s worth starting there.
 APIs often rely on HTTP for communication, and HTTPS builds directly on those concepts.
 
 When you access an API, your client sends a request and receives a response from a program or service.
-For most modern web-based APIs, this exchange happens over [HTTP](HTTP_intro.md) — but in its standard form, HTTP sends data in **plain text**. That means URLs, parameters, and even sensitive information can be read by anyone monitoring the network between client and server.
+For most modern web-based APIs, this exchange happens over [HTTP](/docs/fundamentals/http.md) — but in its standard form, HTTP sends data in **plain text**. That means URLs, parameters, and even sensitive information can be read by anyone monitoring the network between client and server.
 
 ---
 
@@ -54,7 +54,7 @@ When you connect to an API using HTTPS, a handshake process occurs before any ac
    The client and server securely agree on a **session key**, which will be used to encrypt all subsequent communication.
 
 5. **Encrypted Communication**
-   All [HTTP](HTTP_intro.md) requests and responses are now sent through the TLS channel, ensuring confidentiality, integrity, and authenticity.
+   All [HTTP](/docs/fundamentals/http.md) requests and responses are now sent through the TLS channel, ensuring confidentiality, integrity, and authenticity.
 
 ---
 

@@ -4,7 +4,7 @@ Here’s your **updated Introduction to JSON and XML** with all the improvements
 
 # **Introduction to JSON and XML**
 
-When **[APIs](API.md)** exchange data over **[HTTP](HTTP_intro.md)** or **[HTTPS](HTTPS_.md)**, the **body** of the request or response often contains information in a structured format.
+When **[APIs](/docs/fundamentals/api.md)** exchange data over **[HTTP](/docs/fundamentals/http.md)** or **[HTTPS](/docs/fundamentals/https.md)**, the **body** of the request or response often contains information in a structured format.
 Two of the most common formats are **JSON** and **XML**.
 
 ---

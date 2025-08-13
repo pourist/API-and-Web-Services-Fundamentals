@@ -1,6 +1,6 @@
 # **Introduction to HTTP**
 
-If an **[API](API.md)** is the bridge that allows different software systems to communicate, then **HTTP** is one of the most common languages spoken across that bridge — especially for APIs used on the web.
+If an **[API](/docs/fundamentals/api.md)** is the bridge that allows different software systems to communicate, then **HTTP** is one of the most common languages spoken across that bridge — especially for APIs used on the web.
 
 HTTP stands for **Hypertext Transfer Protocol**, and it defines the rules for how clients (such as browsers or apps) and servers exchange information.
 
@@ -91,9 +91,9 @@ The body carries the main content of the message. It is optional:
 * Methods like `POST` or `PUT` usually include one.
 * Responses typically include one unless the status code specifies otherwise (e.g., `204 No Content`).
 
-The body can contain various formats, such as [JSON](JSON_and_XML.md), [XML](JSON_and_XML.md), HTML, plain text, or binary data.
+The body can contain various formats, such as [JSON](/docs/fundamentals/json-xml.md), [XML](/docs/fundamentals/json-xml.md), HTML, plain text, or binary data.
 
-Example ([JSON](JSON_and_XML.md)):
+Example ([JSON](/docs/fundamentals/json-xml.md)):
 
 ```json
 {
@@ -142,11 +142,11 @@ The difference is that requests describe what the client wants to do, while resp
 
 ---
 
-## **[SOAP](REST_and_SOAP.md) vs [REST](REST_and_SOAP.md)**
+## **[SOAP](/docs/fundamentals/rest-soap.md) vs [REST](/docs/fundamentals/rest-soap.md)**
 
-APIs that use HTTP can follow different architectural styles. Two of the most well-known are **[SOAP](REST_and_SOAP.md)** and **[REST](REST_and_SOAP.md)**.
+APIs that use HTTP can follow different architectural styles. Two of the most well-known are **[SOAP](/docs/fundamentals/rest-soap.md)** and **[REST](/docs/fundamentals/rest-soap.md)**.
 
-* **[SOAP](REST_and_SOAP.md) (Simple Object Access Protocol)** – A protocol with strict rules, typically using [XML](JSON_and_XML.md) for its messages. It supports advanced features like built-in error handling and security standards but is more complex and heavier in structure.
+* **[SOAP](/docs/fundamentals/rest-soap.md) (Simple Object Access Protocol)** – A protocol with strict rules, typically using [XML](/docs/fundamentals/json-xml.md) for its messages. It supports advanced features like built-in error handling and security standards but is more complex and heavier in structure.
 
 * **REST (Representational State Transfer)** – An architectural style that uses the standard HTTP methods (`GET`, `POST`, etc.) directly, often with lightweight formats like JSON. REST focuses on simplicity, statelessness, and clear resource-based URLs.
 

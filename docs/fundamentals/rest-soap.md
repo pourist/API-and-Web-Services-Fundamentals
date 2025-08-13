@@ -1,6 +1,6 @@
 # **Introduction to REST and SOAP**
 
-When an **[API](API.md)** communicates over **[HTTP](HTTP_intro.md)**, the client sends a request to a server, and the server sends back a response.
+When an **[API](/docs/fundamentals/api.md)** communicates over **[HTTP](/docs/fundamentals/http.md)**, the client sends a request to a server, and the server sends back a response.
 How this communication is **structured** depends on the architectural style or protocol the API follows.
 Two of the most widely known approaches are **SOAP** and **REST**.
 
@@ -9,13 +9,13 @@ Two of the most widely known approaches are **SOAP** and **REST**.
 ## **SOAP – Simple Object Access Protocol**
 
 SOAP is a **protocol** — meaning it has strict rules for how requests and responses must be formatted.
-It can operate over various transport protocols ([HTTP](HTTP_intro.md), SMTP, etc.), but in web APIs it most often runs over HTTP.
+It can operate over various transport protocols ([HTTP](/docs/fundamentals/http.md), SMTP, etc.), but in web APIs it most often runs over HTTP.
 SOAP services are typically described using a **WSDL** (Web Services Description Language) file, which defines the available operations and message formats.
 
 **Example – Searching “elephant” in SOAP:**
 
 1. The client sends an **HTTP POST** request to the server.
-2. The request body contains an **[XML](JSON_and_XML.md) message** following SOAP’s envelope structure.
+2. The request body contains an **[XML](/docs/fundamentals/json-xml.md) message** following SOAP’s envelope structure.
 3. The server processes the request and returns a **SOAP XML response**.
 
 **SOAP Request Structure:**
@@ -27,7 +27,7 @@ SOAP services are typically described using a **WSDL** (Web Services Description
   Content-Type: text/xml
   ```
 * **Blank line**
-* **Body**: [XML](JSON_and_XML.md) in SOAP envelope format.
+* **Body**: [XML](/docs/fundamentals/json-xml.md) in SOAP envelope format.
 
 **Example SOAP HTTP request:**
 
@@ -68,7 +68,7 @@ REST makes full use of HTTP methods to describe the action being taken:
 
 1. Send an HTTP request to a resource URL such as `/search?q=elephant`.
 2. The **HTTP method** specifies the action.
-3. REST can return data in **[JSON](JSON_and_XML.md)**, **[XML](JSON_and_XML.md)**, HTML, images, or other formats — JSON is most common.
+3. REST can return data in **[JSON](/docs/fundamentals/json-xml.md)**, **[XML](/docs/fundamentals/json-xml.md)**, HTML, images, or other formats — JSON is most common.
 4. The server responds with a status code and the requested data.
 
 ---
@@ -90,5 +90,5 @@ REST makes full use of HTTP methods to describe the action being taken:
 **Summary:**
 
 * **SOAP** is rigid, XML-based, and suited for enterprise systems needing strong contracts and formal standards.
-* **REST** is lightweight, stateless, and has become the dominant style for modern web [API](API.md)s due to its simplicity and flexibility.
+* **REST** is lightweight, stateless, and has become the dominant style for modern web [API](/docs/fundamentals/api.md)s due to its simplicity and flexibility.
 

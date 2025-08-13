@@ -85,10 +85,10 @@ Other examples include:
 
 ## **How an API Transaction Works**
 
-Regardless of the application, most web-based API interactions follow the same **[HTTP](HTTP_intro.md) request–response cycle**:
+Regardless of the application, most web-based API interactions follow the same **[HTTP](/docs/fundamentals/http.md) request–response cycle**:
 
 1. **A request is sent** –
-   The client (such as a browser, mobile app, or backend service) sends an **[HTTP](HTTP_intro.md) request** to the API’s server. This request includes:
+   The client (such as a browser, mobile app, or backend service) sends an **[HTTP](/docs/fundamentals/http.md) request** to the API’s server. This request includes:
 
    * The **URL** — the web address of the API endpoint.
    * The **HTTP method** — such as:
@@ -98,7 +98,7 @@ Regardless of the application, most web-based API interactions follow the same *
      * `PUT` / `PATCH` – Update data.
      * `DELETE` – Remove data.
    * Optional **headers** — metadata like authentication tokens, content type, or caching instructions.
-   * Optional **body** — usually in [JSON](JSON_and_XML.md) or [XML](JSON_and_XML.md) format, containing data to be processed.
+   * Optional **body** — usually in [JSON](/docs/fundamentals/json-xml.md) or [XML](/docs/fundamentals/json-xml.md) format, containing data to be processed.
 
 2. **The server processes the request** –
    The server-side application receives the HTTP request, executes the necessary operations (e.g., database queries, third-party API calls, business logic), and prepares the output.
@@ -107,7 +107,7 @@ Regardless of the application, most web-based API interactions follow the same *
    The server sends back an **HTTP response** consisting of:
 
    * An **HTTP status code** — `200 OK` for success, `404 Not Found` if the resource doesn’t exist, `500 Internal Server Error` if something failed, etc.
-   * The **response body** — usually [JSON](JSON_and_XML.md) or [XML](JSON_and_XML.md) containing the requested data or confirmation of the action taken.
+   * The **response body** — usually [JSON](/docs/fundamentals/json-xml.md) or [XML](/docs/fundamentals/json-xml.md) containing the requested data or confirmation of the action taken.
    * Optional **response headers** — extra metadata like caching info or content type.
 
 This cycle — **HTTP request → processing → HTTP response** — is the backbone of how most modern APIs operate.
@@ -151,7 +151,7 @@ Here’s what happens:
    * Status code: `200 OK` (if successful).
    * Body: HTML content showing your search results.
    * Headers: Information about caching, content type, and more.
-4. Your browser renders the HTML from the [HTTP](HTTP_intro.md) response, displaying the results on your screen.
+4. Your browser renders the HTML from the [HTTP](/docs/fundamentals/http.md) response, displaying the results on your screen.
 
 This **HTTP request–response loop** is the same whether you’re fetching weather data from a weather API, retrieving products from an online store, or interacting with a social media platform’s API.
 
